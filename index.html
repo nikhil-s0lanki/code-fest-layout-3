@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-grid.min.css">
+    <link rel="icon" type="image" href="assets/favicon.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>The Wallet Bank</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap%27');
+
+* {
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d4eff1;
+}
+
+a {
+    padding-left: 1rem;
+}
+
+
+#wallet-img {
+    height: 10vh;
+    width: 5vw;
+}
+
+#col1-txt1 {
+    font-size: 40px;
+    width: 8rem;
+    line-height: 49px;
+    color: #a5e0e3;
+    margin-top: 4rem;
+    margin-left: -1.5rem;
+}
+
+#logo {
+    max-width: 5vw;
+    margin-left: 3em;
+    margin-top: 2em;
+    padding: 0;
+}
+
+#wallettxt {
+    margin-top: 2em;
+    margin-left: 0em;
+}
+
+#barcode {
+    margin-top: 0.5rem;
+    margin-left: -1.8rem;
+}
+
+#mobile {
+    left: 30.5vw;
+    position: absolute;
+    z-index: 1;
+    top: 7vw;
+    box-shadow: 9px 9px #df3900;
+    border-radius: 0px 10px 10px 14px;
+    max-width: 21vw;
+}
+.div
+{
+    padding: 2px;
+    background-color: white;
+    width: 28px;
+    margin-top: 5px;
+}
+#gop
+{
+    font-size: 9vw;
+    text-shadow: 8px 8px #f54002;
+}
+#dow-btn
+{
+    padding-left: 11rem;
+    background-color: black;
+}
+#ul1
+{
+    /* padding-left: 2.6rem; */
+    font-size: 3vw;
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+.li1::before {
+    content: "\2022";
+    color: #d4eff1;
+    font-weight: bold;
+    display: inline-block; 
+    width: 3rem;
+    
+  }
+#dow-btn
+{
+    color: white;
+    width: 16vw;
+    padding: 0;
+    font-size: 2vw;
+}
+#sp1
+{
+    font-weight: 900;
+}
+#sp2
+{
+    font-weight: 900;
+}
+#sp3
+{
+    font-weight: 900;
+    color:#ff5c24 ;
+}
+#spcol
+{
+    padding-top: 4vw;
+    font-size: 3vw;
+    text-align: center;
+}
+.card-h1
+{
+    font-size: 2vw;
+    font-weight: 800;
+}
+.card-h3
+{
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #657d7e;
+}
+.lets-h1
+{
+    font-size: 4vw;
+    line-height: 5vw;
+}
+#learnmor
+{
+    border: none;
+    background-image: linear-gradient(to bottom, #d4eff1 50%,#ff5c24 50%);
+    font-size: 2vw;
+    width: 14vw;
+    font-weight: 900;
+    margin-top: 2vw;
+}
+#round
+{
+    background: #ff5c24;
+    height: 32vw;
+    border-radius: 18vw;
+    width: 32vw;
+    margin-top: 4vw;
+    margin-left: 8.5vw;
+}
+#cross-img
+{
+    position: absolute;
+    top: -3vw;
+    right: 9vw;
+    rotate: -33deg;
+    border-radius: 0px 8px 12px 0px;
+    max-width: 22vw;
+}
+#vimg
+{
+    border-radius: 3vw;
+    max-width: 39vw;
+    height: 33vw;
+}
+.we-h1
+{
+    font-size: 4vw;
+    line-height: 5vw;
+    width: 38vw;
+}
+.our-h1
+{
+    text-align: center;
+    font-size: 4vw;
+    line-height: 5vw;
+}
+#btnm
+{
+    background: #ff5c24;
+    border: none;
+    border-radius: 21px;
+    width: 8vw;
+    color: white;
+    font-size: 12px;
+    padding: 0.5vw;
+    font-weight: 200;
+}
+.dow-h1
+{
+    font-size: 4vw;
+    line-height: 5vw;
+    width: 40vw;
+}
+#od-h1
+{
+    font-weight: 900;
+    padding-top: 3vw;
+    padding-bottom: 1vw;
+}
+#qrimg
+{
+    max-width: 12vw;
+    border-radius: 10px;
+}
+#iapp
+{
+    background: black;
+    height: 5vw;
+    border-radius: 16px;
+    width: 16vw;
+    margin-left: 1.5vw;
+    color: white;
+}
+#papp
+{
+    background: black;
+    height: 5vw;
+    color: white;
+    border-radius: 16px;
+    width: 16vw;
+    margin-left: 1.5vw;
+    margin-top: 2vw;
+}
+#icir
+{
+    padding-left: 1vw;
+    padding-top: 1vw;
+    height: 4.2vw;
+}
+#pcir
+{
+    padding-left: 1vw;
+    padding-top: 1vw;
+    height: 4.2vw;
+}
+#btn-d
+{
+    position: absolute;
+    top: 0.3vw;
+    left: 7vw;
+    font-size: 1.7vw;
+}
+#btn-d2
+{
+    position: absolute;
+    top: 2.3vw;
+    left: 7vw;
+    font-size: 1.7vw;
+}
+#aapp
+{
+    position: absolute;
+    top: 7.3vw;
+    left: 7vw;
+    font-size: 1.7vw;
+}
+#plapp
+{
+    position: absolute;
+    top: 9.3vw;
+    left: 7vw;
+    font-size: 1.7vw;
+}
+#lasimg
+{
+    margin-left: 4vw;
+    max-width: 22vw;
+    max-height: 42vw;
+    box-shadow: 9px 9px #df3900;
+    border-radius: 0px 10px 10px 14px;
+}
+.li2
+{
+    float: left;
+    padding-left: 4vw;
+}
+.ul2
+{
+    list-style-type: none;
+}
+#callnow
+{
+    background-color: black;
+    color: white;
+    width: 7vw;
+    font-size: 20px;
+    height: 2vw;
+}
+#call-h3
+{
+    background-color: black;
+    color: white;
+    width: 12vw;
+    font-size: 29px;
+    height: 3vw;
+    margin-top: 2px;
+}
+#rights
+{
+    font-size: 17px;
+    margin-top: 3vw;
+    font-weight: 100;
+    width: 23vw;
+}
+.li3
+{
+    float: left;
+    padding-left: 1vw;
+}
+#ul3
+{
+    list-style-type: none;
+    float: left;
+    padding-left: 1vw;
+    margin-top: 3vw;
+    position: absolute;
+    right: -3vw;
+}
+/* .. */
+ #about_section-3{
+        border-radius:2%;
+        background-color:rgb(182, 222, 224);
+        text-align: center;
+        padding: 5%;
+        margin: 2%;
+    }
+    #section-3-titel{
+        color: black;
+        font-size: xx-large;
+        font-weight: bolder;
+        
+    }
+    #section-3-discription{
+        color: rgb(77, 76, 76
+@media only screen and (max-width: 750px){
+    * {
+        font-family: 'Oswald', sans-serif;
+        padding: 1px;
+        margin: 1px 1px;
+    }
+} 
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="row" style="position: relative; margin: 0;">
+                <div class="col-sm-5">
+                    <div class="row" style="">
+                        <div class="col-sm-6" id="logo">
+                            <img src="assets/wallet.jpg" alt="" id="wallet-img">
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="assets/wallettxt.png" alt="" id="wallettxt">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-9">
+                            <h1 id="col1-txt1">
+                                THE MOBILE WALLET
+                            </h1>
+                            <img src="assets/barcode.jpg" alt="Image not found" id="barcode">
+                        </div>
+                        <div><img src="assets/mobile.jpg" alt="" id="mobile"></div>
+                    </div>
+                </div>
+                <div class="col-sm-7"
+                    style="background-color: #ff5c24;height: 57vw;padding: 0;border-radius: 23px 0px 0px 23px;color: white;">
+                    <div class="row" style="height: 5vw;">
+                        <div class="col-sm-12">
+                            <div onclick="Show()" style="display: flex;flex-direction: column;align-items: end;width: 55vw;margin-top: 2vw;">
+                                <div class="div" ></div>
+                                <div class="div"></div>
+                                <div class="div"></div>
+                                <div style="background-color: wheat; display: none;" id="down">
+
+                                    <p><a href="">HOME</a></p>
+                                    <p><a href="">ABOUT US</a></p>
+                                    <p><a href="">CONTACT US</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-9">
+                            <p id="gop">GO <br> CASHLESS!</p>
+                            <ul id="ul1">
+                                <li class="li1">ALL-IN-ONE APP</li>
+                                <li class="li1">PAY FOR ALL DAILY NEEDS</li>
+                                <li class="li1">APP IN YOUR LANGUAGE</li>
+                            </ul>
+                            <input type="button" id="dow-btn" value="DOWNLODE NOW">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-sm-12" id="spcol">
+                    <span id="sp1">A COMPLETE FINANCIAL</span><br>
+                    <span id="sp2">NEEDS </span>
+                    <span id="sp3">IN ONE APP</span>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-sm-12" style="height: 3vw;"></div>
+            </div>
+            <!-- this is a section-2 -->
+             <div class="row" id="about_section-3">
+         <div class="col-lg-4"><a href="#" style="text-decoration: none;"><img src="sectoin-3-iamge-1.png"alt="logo"><br><span id="section-3-titel">SUPPORT ALL PAYMENT</span><br><span id="section-3-discription">Lorem ipsum dolor sit amet.</span></a></div>
+         <div class="col-lg-4"><a href="#" style="text-decoration: none;"><img src="sectoin-3-iamge-2.png"alt="logo"><br><span id="section-3-titel">HIGH SECURITY</span><br><span id="section-3-discription">Lorem ipsum dolor sit amet.</span></a></div>
+         <div class="col-lg-4"><a href="#" style="text-decoration: none;"><img src="sectoin-3-iamge-3.png"alt="logo"><br><span id="section-3-titel">100%DIGITAL</span><br><span id="section-3-discription">Lorem ipsum dolor sit amet.</span></a></div>
+         </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row" style="position: relative;">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12" style="height: 12vw;"></div>
+                            <div class="col-sm-12" style="padding: 0;">
+                                <h1 class="lets-h1">LET'S MAKES YOUR FINANCE</h1>
+                                <h1 class="lets-h1"><span>ACTIVITY GOING </span><span
+                                        style="color: #ff5c24;">DIGITALIZE</span></h1>
+                                <h4
+                                    style="color: #657d7e;font-weight: 400;font-size: 17px;padding-top: 1vw;line-height: 2.5vw;">
+                                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR
+                                    INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES
+                                    GRAVIDA. RISUS COMMODO VIVERRA MAECENAS ACCUMSAN LACUS VEL FACILISIS.</h4>
+                                <input type="button" value="LEARN MORE" id="learnmor">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="round"></div>
+                        <div><img src="assets/mobile.jpg" alt="" id="cross-img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-sm6">
+                    <div class="row">
+                        <div class="col-sm-12" style="height: 13vw;"></div>
+                        <div class="col-sm-1" style="width: 11vw;padding: 0;"></div>
+                        <div class="col-sm-11" style="padding: 0;width: 37vw;height: 39vw;">
+                            <img src="assets/vi.jpg" alt="" id="vimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm6">
+                    <div class="row">
+                        <div class="col-sm-12" style="height: 18vw;"></div>
+                        <div class="col-sm-12">
+                            <h1 class="we-h1">WE COMMIT TO GIVE YOU</h1>
+                            <h1 class="we-h1"><span>THE BEST</span><span style="color: #ff5c24;">EXPERIENCE</span></h1>
+                            <h4
+                                style="color: #657d7e;font-weight: 400;font-size: 17px;padding-top: 1vw;line-height: 2.5vw;width: 44vw;">
+                                LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR
+                                INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES GRAVIDA.
+                                RISUS COMMODO VIVERRA MAECENAS ACCUMSAN LACUS VEL FACILISIS.</h4>
+                            <input type="button" value="LEARN MORE" id="learnmor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="row" style="background-color: #c7e5e6;">
+                    <div class="col-sm-12" style="height: 3vw;"></div>
+                    <div class="col-sm-12">
+                        <h1 class="our-h1">OUR LATEST TECHNOLOGY &</h1>
+                        <h1 class="our-h1"><span style="color: #ff5c24;">INTERESTING FEATURES</span></h1>
+                        <h4
+                            style="color: #657d7e;font-weight: 400;font-size: 17px;padding-top: 1vw;line-height: 2.5vw;width: 72vw;margin-left: 12vw;">
+                            <p style="text-align: center;">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED
+                                DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE
+                                ULTRICES GRAVIDA. RISUS COMMODO VIVERRA MAECENAS ACCUMSAN LACUS VEL FACILISIS.</p>
+                        </h4>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-1" style="padding-left: 5vw;"></div>
+                            <div class="col-sm-10" style="padding: 0;">
+                                <div class="row" style="display: flex;justify-content: space-between;">
+                                    <div class="col-sm-2">
+                                        <div><img src="assets/drop.png" alt="" style="padding-bottom: 1vw;"></div>
+                                        <span style="padding-left: 0.8vw;">WATER</span>
+                                    </div>
+                                    <div class="col-sm-2" style="padding-left: 3vw;">
+                                        <div><img src="assets/big-light.png" alt="" style="padding-bottom: 1vw;"></div>
+                                        <span>ELECTRICTY</span>
+                                    </div>
+                                    <div class="col-sm-2" style="padding-left: 3vw;">
+                                        <div><img src="assets/fire.png" alt="" style="padding-bottom: 1vw;"></div>
+                                        <span style="padding-left: 1.8vw;">GAS</span>
+                                    </div>
+                                    <div class="col-sm-2" style="padding-left: 3vw;">
+                                        <div><img src="assets/bag.png" alt="" style="padding-bottom: 1vw;"></div>
+                                        <span style="padding-left: 0.8vw;">SHOPPIG</span>
+                                    </div>
+                                    <div class="col-sm-2" style="padding-left: 8vw;">
+                                        <div><img src="assets/smartphone.png" alt="" style="padding-bottom: 1vw;"></div>
+                                        <span style="padding-left: 1.1vw;">PHONE</span>
+                                    </div>
+                                </div>
+                                <div class="row" style="display: flex;justify-content: space-between;">
+                                    <div class="col-sm-3" style="padding-left: 10vw;padding-top: 3vw;">
+                                        <div><img src="assets/credit-card.png" alt=""></div>
+                                        <span>CREDIT CARD</span>
+                                    </div>
+                                    <div class="col-sm-3" style="padding-left: 10vw;padding-top: 3vw;">
+                                        <div><img src="assets/shield.png" alt=""></div>
+                                        <span>INSURANCE</span>
+                                    </div>
+                                    <div class="col-sm-3" style="padding-left: 5vw;padding-top: 3vw;">
+                                        <div><img src="assets/home.png" alt=""></div>
+                                        <span>MORTGAGE</span>
+                                    </div>
+                                    <div class="col-sm-3" style="padding-left: 5vw;padding-top: 3vw;">
+                                        <div><img src="assets/files.png" alt=""></div>
+                                        <span>OTHER BILLS</span>
+                                    </div>
+                                    <div class="col-sm-12" style="height: 3vw;"></div>
+                                    <div class="col-sm-12" style="text-align: center;padding-bottom: 3vw;">
+                                        <button id="btnm">& MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-sm-12" style="height: 5vw;"></div>
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <div class="col-sm-12" style="height: 5vw;"></div>
+                                <div class="col-sm-12">
+                                    <h1 class="dow-h1">DOWNLOAD AND REGISTER</h1>
+                                    <h1 class="dow-h1"><span>FROM THE </span><span style="color: #ff5c24;">MOBILE
+                                            APP</span></h1>
+                                    <h4
+                                        style="color: #657d7e;font-weight: 400;font-size: 17px;padding-top: 1vw;line-height: 2.5vw;width: 44vw;">
+                                        LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR
+                                        INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES
+                                        GRAVIDA. RISUS COMMODO VIVERRA MAECENAS ACCUMSAN LACUS VEL FACILISIS.</h4>
+                                </div>
+                                <div class="col-sm-12">
+                                    <h1 id="od-h1">DOWNLOAD</h1>
+                                </div>
+                                <div class="col-sm-4" style="margin-left: 1vw;padding: 0;">
+                                    <img src="assets/qr.jpg" alt="" id="qrimg">
+                                </div>
+                                <div class="col-sm-6" style="padding: 0;">
+                                    <div id="iapp">
+                                        <img src="assets/new-moon.png" alt="" id="icir">
+                                        <span id="btn-d">Download on</span><br>
+                                        <span id="btn-d2">Lorem ip</span>
+                                    </div>
+                                    <div id="papp">
+                                        <img src="assets/right-arrow-black-triangle.png" alt="" id="pcir">
+                                        <span id="aapp">Download on</span><br>
+                                        <span id="plapp">Lorem ip</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5" style="padding: 0;">
+                    <img src="assets/mobile.jpg" alt="" id="lasimg">
+                </div>
+                <div class="col sm-12" style="height: 5vw;"></div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="container" style="background-color:#c7e6e7;">
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12" style="height: 2vw;"></div>
+                            <div class="col-sm-2" style="margin-left: 2vw;">
+                                <img src="assets/wallet.jpg" alt="" style="height: 10vh;
+                            width: 5vw;">
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="assets/wallettxt.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12" style="height: 4vw;"></div>
+                            <div class="col-sm-12" style="padding-left: 5vw;">
+                                <ul class="ul2">
+                                    <li class="li2">HOME</li>
+                                    <li class="li2">ABOUT THE APP</li>
+                                    <li class="li2">ABOUT US</li>
+                                    <li class="li2">CONTACT US</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12" style="height: 2vw;"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3" style="margin-left: 2vw; padding: 0;">
+                        <h4 id="callnow" onclick="window.open('tel:900300400');">CALL NOW</h4>
+                        <h3 id="call-h3" onclick="window.open('tel:900300400');">1800 888 555</h3>
+                    </div>
+                    <div class="col-sm-3" style="padding: 0;">
+                        <h5 id="rights">@ COMPANY NAME 2020. ALL RIGHTS RESERVED</h5>
+                    </div>
+                    <div class="col-sm-5" style="padding: 0;">
+                        <ul id="ul3">
+                            <li class="li3"><img src="assets/instagram.png" alt="logo"></li>
+                            <li class="li3"><img src="assets/facebook.png" alt="logo"></li>
+                            <li class="li3"><img src="assets/twitter.png" alt="logo"></li>
+                            <li class="li3"><img src="assets/whatsapp.png" alt="logo"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        let a = document.getElementById("down");
+
+        function Show()
+        {
+            a.style. display = "block";
+        }
+    </script>
+</body>
+
+</html>
